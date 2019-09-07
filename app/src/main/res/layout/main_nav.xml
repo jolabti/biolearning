@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/colorMainBackground"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_main_nav"
+        android:layout_marginBottom="50dp"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_books"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/button_materi_sains_id"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.9"
+            android:background="@color/colorPrimaryButton"
+
+            android:text="Sains"
+            android:textColor="@color/colorEditTextBackground"
+
+            />
+
+
+
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_quiz"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_materi_quiz_id"
+
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.9"
+            android:background="@color/colorPrimaryButton"
+
+            android:text="Quiz"
+            android:textColor="@color/colorEditTextBackground"
+
+            />
+
+
+
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_forum"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_materi_forum_id"
+
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.9"
+            android:background="@color/colorPrimaryButton"
+            android:text="Forum"
+            android:textColor="@color/colorEditTextBackground"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
