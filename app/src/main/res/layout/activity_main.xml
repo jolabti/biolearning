@@ -11,7 +11,7 @@
     android:background="@color/colorMainBackground"
 
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".SplashActivity">
 
 
 

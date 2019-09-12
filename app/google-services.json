@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "787025505733",
+    "firebase_url": "https://biolearning-a11e5.firebaseio.com",
+    "project_id": "biolearning-a11e5",
+    "storage_bucket": "biolearning-a11e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787025505733:android:b364dc54f88113e36fafac",
+        "android_client_info": {
+          "package_name": "com.corry.biolearning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787025505733-omp6e34jhk3u2do0lrp3ijrtlp7clvc8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.corry.biolearning",
+            "certificate_hash": "0a19bb5d4c839e294ff13b5e90c953be7b18a739"
+          }
+        },
+        {
+          "client_id": "787025505733-4c86unefvsdk81ktmqo9791u74srpu2n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-KwkxO57-Z7TuHiybvdKErKwGu-QVfY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787025505733-4c86unefvsdk81ktmqo9791u74srpu2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
