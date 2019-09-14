@@ -13,6 +13,7 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_materi_k6_1_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -21,6 +22,7 @@
             android:textColor="@color/colorWhite" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_materi_k6_2_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -29,6 +31,7 @@
             android:textColor="@color/colorWhite" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_materi_k6_3_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -37,6 +40,7 @@
             android:textColor="@color/colorWhite" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_materi_k6_4_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -45,6 +49,7 @@
             android:textColor="@color/colorWhite" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_materi_k6_5_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -53,6 +58,7 @@
             android:textColor="@color/colorWhite" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_materi_k6_6_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -61,6 +67,7 @@
             android:textColor="@color/colorWhite" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_materi_k6_7_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -69,6 +76,7 @@
             android:textColor="@color/colorWhite" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_materi_k6_8_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -77,6 +85,7 @@
             android:textColor="@color/colorWhite" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/nav_materi_k6_9_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"

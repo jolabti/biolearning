@@ -28,6 +28,7 @@
        />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_materi_kelas_5_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryButton"
@@ -41,6 +42,7 @@
         />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_materi_kelas_6_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryButton"

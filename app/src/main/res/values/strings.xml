@@ -1,3 +1,106 @@
 <resources>
     <string name="app_name">BioLearning</string>
+
+
+
+    <string name="intent_identifier">url_for_materi</string>
+
+    <!--  Materi kelas 5   -->
+
+
+    <string name="url_k5_1">http://biolearn.johannainggolan.site/k5/K5_materi_1.pdf</string>
+    <string name="url_k5_2">http://biolearn.johannainggolan.site/k5/K5_materi_2.pdf</string>
+    <string name="url_k5_3">http://biolearn.johannainggolan.site/k5/K5_materi_3.pdf</string>
+    <string name="url_k5_4">http://biolearn.johannainggolan.site/k5/K5_materi_4.pdf</string>
+    <string name="url_k5_5">http://biolearn.johannainggolan.site/k5/K5_materi_5.pdf</string>
+    <string name="url_k5_6">http://biolearn.johannainggolan.site/k5/K5_materi_6.pdf</string>
+    <string name="url_k5_7">http://biolearn.johannainggolan.site/k5/K5_materi_7.pdf</string>
+    <string name="url_k5_8">http://biolearn.johannainggolan.site/k5/K5_materi_8.pdf</string>
+    <string name="url_k5_9">http://biolearn.johannainggolan.site/k5/K5_materi_9.pdf</string>
+
+    <!--    -->
+
+
+    <!--  Materi kelas 6  -->
+
+    <string name="url_k6_1">http://biolearn.johannainggolan.site/k6/K6_materi_1.pdf</string>
+    <string name="url_k6_2">http://biolearn.johannainggolan.site/k6/K6_materi_2.pdf</string>
+    <string name="url_k6_3">http://biolearn.johannainggolan.site/k6/K6_materi_3.pdf</string>
+    <string name="url_k6_4">http://biolearn.johannainggolan.site/k6/K6_materi_4.pdf</string>
+    <string name="url_k6_5">http://biolearn.johannainggolan.site/k6/K6_materi_5.pdf</string>
+    <string name="url_k6_6">http://biolearn.johannainggolan.site/k6/K6_materi_6.pdf</string>
+    <string name="url_k6_7">http://biolearn.johannainggolan.site/k6/K6_materi_7.pdf</string>
+    <string name="url_k6_8">http://biolearn.johannainggolan.site/k6/K6_materi_8.pdf</string>
+    <string name="url_k6_9">http://biolearn.johannainggolan.site/k6/K6_materi_9.pdf</string>
+
+
+
+
+    <!--    -->
+
+   <!--  Quiz   -->
+
+
+    <string name="quiz_k5_1_soal">Organ pernafasan manusia yang berada dalam rongga dada adalah ....</string>
+    <string name="quiz_k5_1_jawaban_a">Mulut</string>
+    <string name="quiz_k5_1_jawaban_b">Hidung</string>
+    <string name="quiz_k5_1_jawaban_c">Kerongkongan</string>
+    <string name="quiz_k5_1_jawaban_d">Paru - paru</string> //
+
+    <string name="quiz_k5_2_soal">Proses fotosintesis terjadi pada ....</string>
+    <string name="quiz_k5_2_jawaban_a">Siang hari</string> //
+    <string name="quiz_k5_2_jawaban_b">Malam hari</string>
+    <string name="quiz_k5_2_jawaban_c">Fajar</string>
+    <string name="quiz_k5_2_jawaban_d">Tengah malam</string>
+
+    <string name="quiz_k5_3_soal">Penyesuaian diri makhluk hidup terhadap lingkungan dinamakan....</string>
+    <string name="quiz_k5_3_jawaban_a">Organisasi</string>
+    <string name="quiz_k5_3_jawaban_b">Habitat</string>
+    <string name="quiz_k5_3_jawaban_c">Ekosistem</string>
+    <string name="quiz_k5_3_jawaban_d">Adaptasi</string> //
+
+    <string name="quiz_k5_4_soal">Gaya  tarik-menarik  suatu benda disebut ....</string>
+    <string name="quiz_k5_4_jawaban_a">Gesekan</string>
+    <string name="quiz_k5_4_jawaban_b">Ikat</string>
+    <string name="quiz_k5_4_jawaban_c">Magnet</string> //
+    <string name="quiz_k5_4_jawaban_d">Lebur</string>
+
+    <string name="quiz_k5_5_soal">Gempa yang terjadi karena letusan gunung berapi adalah ....</string>
+    <string name="quiz_k5_5_jawaban_a">Gempa tektonik</string>
+    <string name="quiz_k5_5_jawaban_b">Gempa geologi</string>
+    <string name="quiz_k5_5_jawaban_c">Gempa turban</string>
+    <string name="quiz_k5_5_jawaban_d">Gempa vulkanik</string> //
+
+
+    <string name="quiz_k6_1_soal">Mawar memiliki ciri khusus berupa ....</string>
+    <string name="quiz_k6_1_jawaban_a">Daun yang berlendir</string>
+    <string name="quiz_k6_1_jawaban_b">Bunga yang beracun</string>
+    <string name="quiz_k6_1_jawaban_c">Batang yang berongga</string>
+    <string name="quiz_k6_1_jawaban_d">Batang yang berduri</string>  //
+
+    <string name="quiz_k6_2_soal">Penanaman hutan kembali dinamakan ....</string>
+    <string name="quiz_k6_2_jawaban_a">Reorganisasi</string>
+    <string name="quiz_k6_2_jawaban_b">Reboisasi</string> //
+    <string name="quiz_k6_2_jawaban_c">Erosi</string>
+    <string name="quiz_k6_2_jawaban_d">Abrasi</string>
+
+    <string name="quiz_k6_3_soal">Benda yang dapat menghantarkan aliran listrik dengan baik dinamakan ....</string>
+    <string name="quiz_k6_3_jawaban_a">Isolator listrik</string>
+    <string name="quiz_k6_3_jawaban_b">Konduktor listrik</string> //
+    <string name="quiz_k6_3_jawaban_c">Konvektor listrik</string>
+    <string name="quiz_k6_3_jawaban_d">Radiator istrik</string>
+
+    <string name="quiz_k6_4_soal">Pusat tata surya adalah ....</string>
+    <string name="quiz_k6_4_jawaban_a">Planet</string>
+    <string name="quiz_k6_4_jawaban_b">Bulan</string>
+    <string name="quiz_k6_4_jawaban_c">Matahari</string> //
+    <string name="quiz_k6_4_jawaban_d">Asteroid</string>
+
+    <string name="quiz_k6_5_soal">Bumi Mengeliling matahari selama ....</string>
+    <string name="quiz_k6_5_jawaban_a">365 ¼ hari</string> //
+    <string name="quiz_k6_5_jawaban_b">366 hari</string>
+    <string name="quiz_k6_5_jawaban_c">377 ½ hari</string>
+    <string name="quiz_k6_5_jawaban_d">300 hari</string>
+
+
 </resources>

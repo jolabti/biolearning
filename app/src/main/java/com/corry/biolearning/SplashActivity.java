@@ -22,8 +22,11 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent gotoLogin = new Intent(SplashActivity.this, LoginActivity.class);
-                startActivity(gotoLogin);
+//                Intent gotoLogin = new Intent(SplashActivity.this, LoginActivity.class);
+//                startActivity(gotoLogin);
+//
+                Intent gotoMenuKelas = new Intent(SplashActivity.this, MateriActivity.class);
+                startActivity(gotoMenuKelas);
 
             }
         }, 3000);
