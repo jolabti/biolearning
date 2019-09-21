@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMainBackground"
+        tools:context=".QuizActivity"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="No.1"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/quiz_soal_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/quiz_k5_1_soal"
+                    android:layout_weight="0.9"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_marginLeft="30dp"
+                android:id="@+id/rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/jawaban_q1_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_1_jawaban_a"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q1_b"
+                    android:layout_width="wrap_content"
+                    android:background="#3434eded"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_1_jawaban_b" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q1_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_1_jawaban_c"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q1_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_1_jawaban_d"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+
+            </RadioGroup>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="No.2"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/quiz_soal_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/quiz_k5_2_soal"
+                    android:layout_weight="0.9"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_marginLeft="30dp"
+                android:id="@+id/rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/jawaban_q2_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_2_jawaban_a"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q2_b"
+                    android:layout_width="wrap_content"
+                    android:background="#3434eded"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_2_jawaban_b" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q2_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_2_jawaban_c"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q2_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_2_jawaban_d"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--  Scope soal 2   -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="No.3"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/quiz_soal_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/quiz_k5_3_soal"
+                    android:layout_weight="0.9"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_marginLeft="30dp"
+                android:id="@+id/rg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/jawaban_q3_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_3_jawaban_a"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q3_b"
+                    android:layout_width="wrap_content"
+                    android:background="#3434eded"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_3_jawaban_b" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q3_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_3_jawaban_c"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q3_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_3_jawaban_d"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--  Scope soal 3   -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="No.4"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/quiz_soal_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/quiz_k5_4_soal"
+                    android:layout_weight="0.9"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_marginLeft="30dp"
+                android:id="@+id/rg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/jawaban_q4_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_4_jawaban_a"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q4_b"
+                    android:layout_width="wrap_content"
+                    android:background="#3434eded"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_4_jawaban_b" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q4_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_4_jawaban_c"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q4_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_4_jawaban_d"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--  Scope soal 4   -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="No.5"
+                    android:layout_weight="0.1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/quiz_soal_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/quiz_k5_5_soal"
+                    android:layout_weight="0.9"
+                    >
+
+                </androidx.appcompat.widget.AppCompatTextView>
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:layout_marginLeft="30dp"
+                android:id="@+id/rg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/jawaban_q5_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_5_jawaban_a"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q5_b"
+                    android:layout_width="wrap_content"
+                    android:background="#3434eded"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_5_jawaban_b" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q5_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_5_jawaban_c"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/jawaban_q5_d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_k5_5_jawaban_d"
+                    android:background="#3434eded"
+                    android:checked="true" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--  Scope soal 5   -->
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

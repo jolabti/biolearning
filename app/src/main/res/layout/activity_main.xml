@@ -51,6 +51,7 @@
 
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/login_edt_username_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
@@ -58,6 +59,7 @@
             android:inputType="text"
             android:textColor="@color/colorTextBlack"
             android:background="@color/colorEditTextBackground"
+
             android:maxLines="1"
             android:padding="5dp"
             android:layout_marginBottom="20dp"
@@ -68,10 +70,13 @@
 
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/login_edt_password_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword"
+            android:textColorHint="@color/colorTextGrey"
+            android:textColor="@color/colorTextBlack"
             android:background="@color/colorEditTextBackground"
             android:maxLines="1"
             android:padding="5dp"
@@ -85,6 +90,8 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/login_button_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryButton"
@@ -92,6 +99,24 @@
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
         android:text="LOGIN"
+        android:textColor="@color/colorWhite"
+        >
+
+
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registrasi_button_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryButton"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="REGISTRASI"
         android:textColor="@color/colorEditTextBackground"
 
         >

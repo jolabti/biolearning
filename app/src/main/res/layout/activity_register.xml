@@ -47,9 +47,11 @@
 
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/register_edtusername_id"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:hint="Username ..."
             android:textColorHint="@color/colorTextGrey"
             android:inputType="text"
             android:background="@color/colorEditTextBackground"
@@ -63,9 +65,12 @@
 
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/register_edtpassword_id"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:textColorHint="@color/colorTextGrey"
+            android:hint="Password ..."
             android:inputType="textPassword"
             android:background="@color/colorEditTextBackground"
             android:maxLines="1"
@@ -77,9 +82,11 @@
         </androidx.appcompat.widget.AppCompatEditText>
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:textColorHint="@color/colorTextGrey"
+            android:id="@+id/register_edtrepassword_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:hint="Re-Type Password ..."
             android:inputType="textPassword"
             android:background="@color/colorEditTextBackground"
             android:maxLines="1"
@@ -95,6 +102,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_button_confirm_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryButton"

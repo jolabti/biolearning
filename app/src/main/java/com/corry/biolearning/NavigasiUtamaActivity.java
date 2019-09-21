@@ -47,6 +47,11 @@ public class NavigasiUtamaActivity extends AppCompatActivity implements View.OnC
             case R.id.button_materi_quiz_id:
                 Toast.makeText(this, "QUIZ BUTTON", Toast.LENGTH_SHORT).show();
 
+                Intent i = new Intent(NavigasiUtamaActivity.this,MateriActivity.class);
+                i.putExtra(getResources().getString(R.string.flaq_quiz), getResources().getString(R.string.flaq_5));
+
+                startActivity(i);
+
                 break;
             case R.id.button_materi_forum_id:
                 Toast.makeText(this, "FORUM BUTTON", Toast.LENGTH_SHORT).show();
