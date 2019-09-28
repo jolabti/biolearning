@@ -8,10 +8,23 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.corry.biolearning.Shareclass.Function;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
+import java.security.SecureRandom;
+
 public class NavigasiUtamaActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     AppCompatButton btnSains, btnQuiz, btnForum;
+
+    private static final String CHAR_LOWER = "abcdefghijklmnopqrstuvwxyz";
+    private static final String CHAR_UPPER = CHAR_LOWER.toUpperCase();
+    private static final String NUMBER = "0123456789";
+
+    private static final String DATA_FOR_RANDOM_STRING = CHAR_LOWER + CHAR_UPPER + NUMBER;
+    private static SecureRandom random = new SecureRandom();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +69,21 @@ public class NavigasiUtamaActivity extends AppCompatActivity implements View.OnC
             case R.id.button_materi_forum_id:
                 Toast.makeText(this, "FORUM BUTTON", Toast.LENGTH_SHORT).show();
 
+
+                try {
+
+
+
+                    Function.writeForumDiscussion(getApplicationContext(), FirebaseAuth.getInstance().getCurrentUser().getEmail(),generateRandomString(100));
+
+
+
+
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+
                 break;
 
 
@@ -66,6 +94,27 @@ public class NavigasiUtamaActivity extends AppCompatActivity implements View.OnC
 
     public void pindahPage(Intent intent){
         startActivity(intent);
+
+    }
+
+    public static String generateRandomString(int length) {
+        if (length < 1) throw new IllegalArgumentException();
+
+        StringBuilder sb = new StringBuilder(length);
+        for (int i = 0; i < length; i++) {
+
+            // 0-62 (exclusive), random returns 0-61
+            int rndCharAt = random.nextInt(DATA_FOR_RANDOM_STRING.length());
+            char rndChar = DATA_FOR_RANDOM_STRING.charAt(rndCharAt);
+
+            // debug
+            System.out.format("%d\t:\t%c%n", rndCharAt, rndChar);
+
+            sb.append(rndChar);
+
+        }
+
+        return sb.toString();
 
     }
 }

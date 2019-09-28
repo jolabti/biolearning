@@ -77,6 +77,8 @@ public class LoginActivity extends AppCompatActivity {
 
                                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
 
+
+
                                 if (!firebaseUser.getEmail().isEmpty() || firebaseUser.getEmail() != null) {
 
                                     Function.showToast(LoginActivity.this, firebaseUser.getEmail());
