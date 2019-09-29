@@ -33,7 +33,7 @@
     <string name="url_k6_6">http://biolearn.johannainggolan.site/k6/K6_materi_6.pdf</string>
     <string name="url_k6_7">http://biolearn.johannainggolan.site/k6/K6_materi_7.pdf</string>
     <string name="url_k6_8">http://biolearn.johannainggolan.site/k6/K6_materi_8.pdf</string>
-    <string name="url_k6_9">http://biolearn.johannainggolan.site/k6/K6_materi_9.pdf</string>
+    <string name="url_k6_9">http://biolearn.johannainggolan.site/k6/k6_materi_9.pdf</string>
 
 
     <!--    -->
@@ -82,6 +82,7 @@
     <string name="quiz_k6_1_jawaban_b">Bunga yang beracun</string>
     <string name="quiz_k6_1_jawaban_c">Batang yang berongga</string>
     <string name="quiz_k6_1_jawaban_d">Batang yang berduri</string>
+
     //
 
     <string name="quiz_k6_2_soal">Penanaman hutan kembali dinamakan ....</string>

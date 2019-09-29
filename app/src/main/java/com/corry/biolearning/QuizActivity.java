@@ -2,14 +2,20 @@ package com.corry.biolearning;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatTextView;
 
+import com.corry.biolearning.Shareclass.Function;
+
 public class QuizActivity extends AppCompatActivity {
+
+    AppCompatButton btnQuiz;
 
     AppCompatTextView soal1, soal2, soal3, soal4, soal5;
 
@@ -72,6 +78,9 @@ public class QuizActivity extends AppCompatActivity {
         jawaban5_b = findViewById(R.id.jawaban_q5_b);
         jawaban5_c = findViewById(R.id.jawaban_q5_c);
         jawaban5_d = findViewById(R.id.jawaban_q5_d);
+
+        btnQuiz = findViewById(R.id.quiz_result_id);
+
 
 
         if (bundle.getString(getResources().getString(R.string.flaq_quiz)) != null && bundle.getString(getResources().getString(R.string.flaq_quiz)).equals(getResources().getString(R.string.flaq_5))) {
@@ -305,6 +314,21 @@ public class QuizActivity extends AppCompatActivity {
         }
 
 
+        btnQuiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Log.d("trace_hiz", String.valueOf(hitungBenar));
+
+
+                Function.showToast(getApplicationContext(), "Hasil Kuis anda ===> "+ hitungBenar);
+
+
+
+            }
+        });
+
+
     }
 
     public String showDataText(int sourceSoal) {
@@ -321,7 +345,20 @@ public class QuizActivity extends AppCompatActivity {
         boolean mybool = false;
 
         if (radioButton.getText().equals(realAnswer)) {
+
             mybool = true;
+
+            if(hitungBenar>=5){
+
+                Function.showToast(getApplicationContext(),"Anda telah menyelesaikan soal");
+            }
+            else{
+
+                hitungBenar++;
+
+            }
+
+
         }
 
         return mybool;
