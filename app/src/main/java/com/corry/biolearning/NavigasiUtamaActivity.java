@@ -52,6 +52,7 @@ public class NavigasiUtamaActivity extends AppCompatActivity implements View.OnC
 
                 Toast.makeText(this, "SAINS BUTTON", Toast.LENGTH_SHORT).show();
                 Intent intentSains = new Intent(this, MateriActivity.class);
+                intentSains.putExtra(getResources().getString(R.string.flaq_quiz), "");
                 pindahPage(intentSains);
 
 
@@ -70,7 +71,8 @@ public class NavigasiUtamaActivity extends AppCompatActivity implements View.OnC
 
                 try {
 
-                    Function.writeForumDiscussion(getApplicationContext(), FirebaseAuth.getInstance().getCurrentUser().getEmail(), generateRandomString(100));
+                    Intent gotoForum = new Intent(NavigasiUtamaActivity.this, ForumActivity.class);
+                    startActivity(gotoForum);
 
                 } catch (Exception e) {
                     e.printStackTrace();

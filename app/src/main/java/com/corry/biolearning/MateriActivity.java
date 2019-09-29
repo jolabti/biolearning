@@ -44,7 +44,7 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
 
                     startActivity(i);
                 }
-                else{
+                if(bundle.getString(getResources().getString(R.string.flaq_quiz)).equals("")){
 
                     Intent gotoLay5 = new Intent(MateriActivity.this, Lay5Activity.class);
                     startActivity(gotoLay5);
@@ -65,7 +65,7 @@ public class MateriActivity extends AppCompatActivity implements View.OnClickLis
 
                     startActivity(i);
                 }
-                else{
+                if(bundle.getString(getResources().getString(R.string.flaq_quiz)).equals("")){
 
                     Intent gotoLay6 = new Intent(MateriActivity.this, Lay6Activity.class);
                     startActivity(gotoLay6);

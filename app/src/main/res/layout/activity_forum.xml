@@ -7,6 +7,8 @@
     android:orientation="vertical"
     tools:context=".ForumActivity">
 
+<!--    https://www.android-examples.com/show-firebase-database-data-into-recyclerview/-->
+
 
     <LinearLayout
         android:id="@+id/ll_forum_id"
@@ -44,10 +46,11 @@
             android:id="@+id/edx_post_id"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:textColorHint="@color/colorTextGrey"
+            android:layout_weight="0.8"
             android:hint="Comments here ..."
+            android:backgroundTint="@color/colorPrimaryButton"
             android:padding="10dp"
-            android:layout_weight="0.8">
+            android:textColorHint="@color/colorTextGrey">
 
 
         </androidx.appcompat.widget.AppCompatEditText>
