@@ -1,10 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorMainBackground"
+    android:background="@color/colorMainForum"
+    android:orientation="vertical"
     tools:context=".ForumActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_forum_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_forum_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTextGrey">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_post_forum_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+
+        android:orientation="horizontal"
+
+        >
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edx_post_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColorHint="@color/colorTextGrey"
+            android:hint="Comments here ..."
+            android:padding="10dp"
+            android:layout_weight="0.8">
+
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img_post_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="0.2"
+            android:src="@mipmap/ic_send_icon"
+            android:text="@string/app_name">
+
+
+        </androidx.appcompat.widget.AppCompatImageView>
+
+    </LinearLayout>
+
 
 </LinearLayout>

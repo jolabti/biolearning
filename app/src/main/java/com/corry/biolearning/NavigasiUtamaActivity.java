@@ -10,7 +10,6 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import com.corry.biolearning.Shareclass.Function;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import java.security.SecureRandom;
 
@@ -52,7 +51,7 @@ public class NavigasiUtamaActivity extends AppCompatActivity implements View.OnC
 
 
                 Toast.makeText(this, "SAINS BUTTON", Toast.LENGTH_SHORT).show();
-                Intent intentSains = new Intent(this,MateriActivity.class);
+                Intent intentSains = new Intent(this, MateriActivity.class);
                 pindahPage(intentSains);
 
 
@@ -60,7 +59,7 @@ public class NavigasiUtamaActivity extends AppCompatActivity implements View.OnC
             case R.id.button_materi_quiz_id:
                 Toast.makeText(this, "QUIZ BUTTON", Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(NavigasiUtamaActivity.this,MateriActivity.class);
+                Intent i = new Intent(NavigasiUtamaActivity.this, MateriActivity.class);
                 i.putExtra(getResources().getString(R.string.flaq_quiz), getResources().getString(R.string.flaq_5));
 
                 startActivity(i);
@@ -69,18 +68,11 @@ public class NavigasiUtamaActivity extends AppCompatActivity implements View.OnC
             case R.id.button_materi_forum_id:
                 Toast.makeText(this, "FORUM BUTTON", Toast.LENGTH_SHORT).show();
 
-
                 try {
 
+                    Function.writeForumDiscussion(getApplicationContext(), FirebaseAuth.getInstance().getCurrentUser().getEmail(), generateRandomString(100));
 
-
-                    Function.writeForumDiscussion(getApplicationContext(), FirebaseAuth.getInstance().getCurrentUser().getEmail(),generateRandomString(100));
-
-
-
-
-                }
-                catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
 
@@ -92,7 +84,7 @@ public class NavigasiUtamaActivity extends AppCompatActivity implements View.OnC
     }
 
 
-    public void pindahPage(Intent intent){
+    public void pindahPage(Intent intent) {
         startActivity(intent);
 
     }
