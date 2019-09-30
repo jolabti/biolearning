@@ -5,7 +5,6 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatEditText;
@@ -50,10 +49,9 @@ public class ForumActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forum);
 
-        database.setPersistenceEnabled(true);
+        database.setPersistenceEnabled(false);
         myRef = database.getReference("forumgroup");
-        myRef.keepSynced(true);
-
+        myRef.keepSynced(false);
 
         declareComponent();
 
@@ -93,8 +91,6 @@ public class ForumActivity extends AppCompatActivity {
 
     private void retrieveDataFirebase() {
 
-        forums = new ArrayList<>();
-
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
@@ -104,19 +100,27 @@ public class ForumActivity extends AppCompatActivity {
 
                 if (dataSnapshot.exists()) {
 
+
+                    forums = new ArrayList<>();
+                    forums.clear();
+
+
                     for (DataSnapshot npsnapshot : dataSnapshot.getChildren()) {
                         ForumModel l = npsnapshot.getValue(ForumModel.class);
                         Log.d("trace_me", l.getEmailPoster());
                         Log.d("trace_me", l.getMessagePoster());
 
 
-
-
-                        // forums.add(new ForumModel(l.getEmailPoster(),l.getMessagePoster()));
                         forums.add(l);
 
 
                     }
+
+
+                }
+
+
+                if (forums != null) {
 
 
                     final Handler handler = new Handler();
@@ -128,11 +132,6 @@ public class ForumActivity extends AppCompatActivity {
 
                             Collections.reverse(forums);
                             fAdapter = new ForumAdapter(forums);
-                            Toast.makeText(getApplicationContext(), "check" + " " + forums.size(), Toast.LENGTH_SHORT).show();
-//                             handler.postDelayed(this, 2000);
-
-                            Log.d("trace_forumzise", String.valueOf(forums.size()));
-
 
 
                             RecyclerView.LayoutManager layoutManager =
@@ -140,12 +139,24 @@ public class ForumActivity extends AppCompatActivity {
                             rvforum.setLayoutManager(layoutManager);
                             rvforum.setHasFixedSize(true);
                             rvforum.setAdapter(fAdapter);
-
+                            fAdapter.notifyDataSetChanged();
 
 
                         }
-                    }, 3000);
+                    }, 200);
+                } else if (forums == null) {
 
+                    final Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            //Do something after 100ms
+
+
+                            Function.showToast(getApplicationContext(), "Data forum kosong");
+
+                        }
+                    }, 100);
 
                 }
 
@@ -157,9 +168,6 @@ public class ForumActivity extends AppCompatActivity {
                 System.out.println("The read failed: " + databaseError.getCode());
             }
         });
-
-
-
 
 
     }

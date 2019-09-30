@@ -92,8 +92,7 @@ public class LoginActivity extends AppCompatActivity {
                             } else if (!task.isSuccessful()) {
 
                                 Function.showToast(LoginActivity.this, getResources().getString(R.string.error_login));
-                                Log.d("trace_failed", task.getResult().getUser().getEmail());
-                                Log.d("trace_failed", task.getException().getMessage());
+
 
                             }
 
